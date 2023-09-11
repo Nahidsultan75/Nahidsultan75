@@ -1,0 +1,162 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <BaseHead
+      title='Tamal Anwar Chowdhury, a phd holder Bangladeshi Software Engineer'
+      description={Tamal Anwar Chowdhury is a PHD holder software engineer from Bangladesh, specialized in frontend ReactJS. He is currently looking for his next role in tech.}
+    />
+  </head>
+  <body>
+    <div itemscope itemtype='https://schema.org/WebSite'>
+      <meta itemprop='url' content='https://tamalchowdhury.com/' />
+      <meta itemprop='name' content='Tamal Anwar Chowdhury' />
+    </div>
+    <Header title={SITE_TITLE} />
+    <>
+      <div class='wrapper'>
+        <p>
+          Hello, it's Tamal Anwar Chowdhury, Bangladeshi Software Engineer and
+          content creator. You will find everything you need to know about me
+          here.
+        </p>
+
+        <!-- <div class='heading'>
+          <h1 class='en'>Show Don't Tell</h1>
+          <h1 class='bangla'>কথা কম কাজ বেশি</h1>
+          <p>Check out some of my best software work:</p>
+        </div>
+
+        <div class='content'>
+          <div class='item one'></div>
+          <div class='item two'></div>
+          <div class='item three'></div>
+        </div> -->
+
+        <section>
+          <div class='heading'>
+            <h1 class='en'>Featured Content</h1>
+            <h1 class='bangla'>সবচেয়ে জোস ভিডিওগুলা</h1>
+            <p>
+              I am going big on videos these days. Check out some of my best
+              videos here.
+            </p>
+          </div>
+
+          <div class='content'>
+            <div class='item one'>
+              <a
+                href='https://www.tiktok.com/@tamalchow/video/7218895918823640321'
+                target='_blank'
+              >
+                <img
+                  src='/img/thumb_wifi.jpg'
+                  alt='No wifi after power cut video'
+                />
+              </a>
+            </div>
+            <div class='item two'>
+              <a
+                href='https://www.tiktok.com/@tamalchow/video/7217767040415796482'
+                target='_blank'
+              >
+                <img
+                  src='/img/thumb_javajs.jpg'
+                  alt='Are Java and JavaScript the same?'
+                />
+              </a>
+            </div>
+            <div class='item three'>
+              <a
+                href='https://www.tiktok.com/@tamalchow/video/7218596054202207490'
+                target='_blank'
+              >
+                <img
+                  src='/img/thumb_cyb.jpg'
+                  alt='Cybersecurity setup in mobile'
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- <div class='heading'>
+          <h1 class='en'>Latest News</h1>
+          <h1 class='bangla'>লেটেস্ট খবর</h1>
+          <p>A blog feed will follow here..</p>
+        </div> -->
+        <section>
+          <div class='heading' id='socials'>
+            <h1 class='en'>Connect with Me</h1>
+            <h1 class='bangla'>সোশাল মিডিয়াগুলা</h1>
+
+            <nav class='socials'>
+              <a
+                href='https://facebook.com/tamalchowdhury.profile'
+                target='_blank'>Facebook</a
+              >
+              <a
+                href='https://instagram.com/tamalchowdhury.insta'
+                target='_blank'>Instagram</a
+              >
+              <a href='https://tiktok.com/@tamalchow' target='_blank'>TikTok</a>
+              <a href='https://twitter.com/tamalchow' target='_blank'>Twitter</a
+              >
+              <a href='https://www.youtube.com/@tamalchowdhury' target='_blank'
+                >YouTube</a
+              >
+              <a href='https://linkedin.com/in/tamalchowdhury' target='_blank'
+                >Linkedin</a
+              >
+              <a href='https://github.com/tamalchowdhury' target='_blank'
+                >GitHub</a
+              >
+              <a
+                href='https://play.google.com/store/apps/dev?id=5350464485153942303'
+                target='_blank'>Google Play</a
+              >
+            </nav>
+          </div>
+          <section>
+            <div class='heading'>
+              <h1 class='en'>Other Pages</h1>
+              <h1 class='bangla'>অন্যান্য পেজগুলা</h1>
+              <nav>
+                <a href='/software-engineering'>Software Engineering</a>
+                <a href='/content'>Content Creation</a>
+                <a href='/community'>Community Building</a>
+              </nav>
+            </div>
+          </section>
+        </section>
+        <section>
+          <div class='heading'>
+            <h1 class='bangla'>My Inspirations</h1>
+            <p>
+              I am heavily inspired by Rockstar Games
+              <a href='https://classicgtasites.com/iii/' target='_blank'>
+                GTA web designs.
+              </a>
+            </p>
+          </div>
+          <p>
+            P.S.: If you are a web CTF enthusiast, I have also hidden (1)
+            artifact in this website. I hope you will enjoy it.
+          </p>
+          <!-- <p>
+            Yes, the artifact is https://www.youtube.com/watch?v=p0g_2KeymZ4
+            --so simple isn't it? Next time it will be a bit harder. Check back often for more and more artifacts like this one.
+          </p> -->
+        </section>
+      </div>
+      <Footer />
+    </>
+  </body>
+</html>
+
